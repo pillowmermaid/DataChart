@@ -1,0 +1,37 @@
+.App {
+  font-size: 12px;
+  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.ToolBar-tab, .Chart-header--item {
+  color: #3F8EC4;
+
+}
+
+
+.SearchBar-search--field,
+.SearchBar-search--filter,
+.SearchBar-upload,
+.SearchBar-download,
+.SearchBar-tab,
+.Chart-header--item,
+.Chart-header--spread {
+  display: inline-block;
+}
+@media screen and (min-width: 1024px){
+  .App {
+    padding: 20px;
+  }
+
+  .SearchBar-buttons,
+  .SearchBar-header,
+  .SearchBar-search,
+  .ToolBar-tab,
+  .ChartItem--label,
+  .ChartItem--spread-section {
+    display: inline-block;
+  }
+
+}

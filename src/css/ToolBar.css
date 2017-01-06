@@ -1,0 +1,23 @@
+.ToolBar-tab  {
+  padding: 10px;
+  cursor: pointer;
+}
+.ToolBar-tab.active {
+  color: black;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px){
+  .ToolBar-tabs  {
+  }
+  .ToolBar-tab  {
+    padding: 10px;
+  }
+  .ToolBar-tab.active {
+    border-bottom: 0 solid;
+    background-color: white;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-color: #E0E0E0;
+  }
+}

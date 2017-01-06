@@ -1,0 +1,182 @@
+
+.Chart-header {
+  display: none;
+}
+.ChartItem {
+  padding: 5px;
+  width: 100%;
+}
+.ChartItem--label {
+  margin: 5px 0;
+}
+.ChartItem:nth-child(odd) {
+  background-color: #EAEAEA;
+}
+.ChartItem:not(:first-child) {
+  border-top: 1px solid #E4E4E4;
+}
+.Chart--pagination {
+  margin: 20px auto 0;
+  width:50%;
+  text-align: center;
+}
+.Chart--pagination {
+  margin: 20px auto 0;
+  width:100%;
+  text-align: center;
+}
+.Chart--page {
+  color: #3F8EC4;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+}
+.Chart--page i {
+  margin-left: 5px;
+}
+  .ChartItem--label.graph-icon{
+    display: none;
+    vertical-align: top;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  .ChartItem--spread-label {
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+    font-size: 11px;
+  }
+  .ChartItem--spread-bottom{
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .ChartItem--spread-label.mobile-label {
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+    font-size: 11px;
+  }
+  .ChartItem--label span.mobile-label {
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    color: #808080;
+    width: 30%;
+  }
+@media screen and (max-width: 1023px){
+  .ChartItem--label span {
+    width: 60%;
+    display: inline-block;
+    font-size: 11px;
+  }
+  .ChartItem--label.graph-icon{
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+
+  }
+}
+@media screen and (min-width: 768px){
+  .Chart--page {
+    padding: 10px 15px;
+  }
+  .ChartItem--label span {
+
+    font-size: 14px;
+  }
+
+}
+@media screen and (min-width: 1024px){
+  .ChartItem--label span.mobile-label, .ChartItem--spread-label.mobile-label, .ChartItem--spread-bottom {
+    display: none;
+  }
+  .ChartItem--label span {
+
+    font-size: 12px;
+  }
+  .Chart {
+    border-bottom: 1px solid black;
+  }
+  .Chart-header {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+  }
+
+  .Chart-header--spread-label {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+  }
+
+  .Chart-header--spread, .ChartItem--spread-section{
+    text-align: center;
+    width: 33%;
+  }
+  .Chart-header--spread .Chart-header--item, .ChartItem--spread-section .ChartItem--label {
+    width: 20%;
+    margin: 0 7px;
+  }
+
+  .Chart-header--item, .ChartItem--label {
+    width: 12%;
+    margin: 0 6px;
+  }
+  .Chart-header--item {
+    font-weight: bold;
+  }
+  .Chart-header--item i{
+    margin-left: 5px;
+    vertical-align: top;
+  }
+  .ChartItem {
+    padding: 2px 0;
+  }
+  .ChartItem--label {
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-middle-with-baseline;
+  }
+
+
+  .issuer {
+    color: #3F8EC4;
+  }
+  .years-remaining {
+    text-align: center;
+    width: 10%;
+  }
+  .description {
+   width: 16%;
+  }
+  .currency {
+   width: 5%;
+  }
+  .benchmark {
+    margin: 0;
+   width: 12%;
+  }
+  .updated {
+    width: 5%;
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 1255px){
+  .ChartItem--label.graph-icon{
+    display: inline-block;
+    max-width: 25px;
+    padding: 1px;
+  }
+  .updated {
+    width: 5%;
+    margin: 0;
+  }
+}
